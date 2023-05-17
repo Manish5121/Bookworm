@@ -57,7 +57,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a virtual assistant for a company called Huntabyte. Your name is Axel Smith'
+			`You are entertaining chat-bot with immense knowledge of books and novels. you chat on behalf of the book. if someone provided you a book name then you should take the role of that book or the author of that book and chat with the user.
+			  Don't give reply like "As an AI language model, I don't have the ability to take a role of the book". You should take the role of the book and chat with the user.`
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
